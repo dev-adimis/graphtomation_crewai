@@ -1,3 +1,3 @@
-from .router import CrewRouter, CrewSchema
+from .router import CrewAIRouter, CrewSchema
 
-__all__ = ["CrewRouter", "CrewSchema"]
+__all__ = ["CrewAIRouter", "CrewSchema"]

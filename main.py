@@ -1,12 +1,12 @@
 from fastapi import FastAPI
-from graphtomation_crewai import CrewRouter
+from graphtomation_crewai import CrewAIRouter
 
 from tests.example import example_crew
 
 app = FastAPI()
 
 
-crew_router = CrewRouter(
+crew_router = CrewAIRouter(
     crews=[
         {
             "name": "example-crew",

@@ -14,7 +14,7 @@ class CrewSchema(TypedDict, total=False):
     metadata: Optional[dict] = None
 
 
-class CrewRouter:
+class CrewAIRouter:
     def __init__(
         self,
         crews: List[CrewSchema],
@@ -53,7 +53,7 @@ class CrewRouter:
         include_in_schema: bool = True,
     ):
         """
-        Initialize the CrewRouter.
+        Initialize the CrewAIRouter.
 
         :param crews: A list of crews to register.
         :param dependencies: A dictionary mapping route names to their dependencies.

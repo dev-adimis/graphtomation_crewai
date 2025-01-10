@@ -128,13 +128,13 @@ We use **Graphtomation Crewai** to expose the `example_crew` as an API endpoint.
 
 ```python
 from fastapi import FastAPI
-from graphtomation_crewai.router import CrewRouter
+from graphtomation_crewai.router import CrewAIRouter
 from tests.example import example_crew
 
 app = FastAPI()
 
-# Create the CrewRouter instance with metadata
-crew_router = CrewRouter(
+# Create the CrewAIRouter instance with metadata
+crew_router = CrewAIRouter(
     crews=[
         {
             "name": "example-crew",
@@ -147,7 +147,7 @@ crew_router = CrewRouter(
     ]
 )
 
-# Include the CrewRouter in the FastAPI app
+# Include the CrewAIRouter in the FastAPI app
 app.include_router(crew_router.router, prefix="/crew")
 ```
 
