@@ -1,0 +1,12 @@
+include README.md
+include requirements.txt
+include .env
+include .env.prod
+include .gitignore
+exclude main.py
+recursive-exclude tests *
+recursive-exclude docs *
+recursive-exclude .venv *
+recursive-exclude graphtomation_crewai/__pycache__ *
+exclude .pypirc
+exclude twine.py
