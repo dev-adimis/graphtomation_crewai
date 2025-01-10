@@ -6,7 +6,7 @@ with open(requirements_path, "r") as f:
     install_requires = f.read().splitlines()
 
 setup(
-    name="graphtomation_crewai",  # Change to use underscores
+    name="graphtomation_crewai",
     version="0.0.1",
     author="Aditya Mishra",
     author_email="aditya.mishra@adimis.in",
